@@ -8,10 +8,13 @@ public class Main {
         System.out.print("Sayı giriniz:");
         k = input.nextInt();
 
+        int sum = 0, counter = 0;
+
         int i = 1;
         while (i <= k) {
             if ((i % 3 == 0) && (i % 4 == 0)) {
-                System.out.println(i);
+                sum += i;
+                counter++;
             }
             i++;
         }
@@ -35,6 +38,13 @@ public class Main {
             }
         }
         */
+
+        double average = sum / counter;
+        if (sum != 0) {
+            System.out.println("1'den " + k + " sayısına kadar olan (mod3,4=0) sayıların ortalaması: " + average);
+        } else {
+            System.out.println("1'den " + k + " sayısına kadar olan (mod3,4=0) sayıların içinde 3'e ve 4'e bölünebilen sayı yoktur.");
+        }
 
     }
 }
