@@ -10,6 +10,7 @@ public class Main {
 
         int sum = 0, counter = 0;
 
+
         int i = 1;
         while (i <= k) {
             if ((i % 3 == 0) && (i % 4 == 0)) {
@@ -24,7 +25,8 @@ public class Main {
         int i = 1;
         do {
             if ((i % 3 == 0) && (i % 4 == 0)) {
-                System.out.println(i);
+                sum += i;
+                counter++;
             }
             i++;
         } while (i <= k);
@@ -34,7 +36,8 @@ public class Main {
         /*
         for (int i = 1; i <= k; i++) {
             if ((i % 3 == 0) && (i % 4 == 0)) {
-                System.out.println(i);
+                sum += i;
+                counter++;
             }
         }
         */
